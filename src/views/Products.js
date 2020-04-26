@@ -27,6 +27,7 @@ let Products = () => {
   ]
 
   let toggleActive = () => {
+    document.getElementById("Termékek").style.backgroundImage = 'url(backgrounds/' + Math.floor(Math.random() * 3 + 1) + '.jpg)'
   }
 
   let onCategoryClick = (category) => {
