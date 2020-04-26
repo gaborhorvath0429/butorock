@@ -1,0 +1,17 @@
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 20vw;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+}

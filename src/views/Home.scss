@@ -1,0 +1,48 @@
+.home {
+  width: 100vw;
+  .overlay {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+    animation-name: overlay;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .nav {
+    display: flex;
+
+    .item, a {
+      width: calc(100vw / 4);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      transition: all .5s;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: .9;
+
+      &:hover {
+        opacity: 1;
+        width: 70vw;
+        font-size: 3rem;
+        color: #fb0;
+      }
+    }
+  }
+}
+
+@keyframes overlay {
+  from{width: 100vw}
+  to{width: 0}
+}

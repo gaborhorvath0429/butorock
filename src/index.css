@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Gotu';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Gotu', sans-serif;
+}
+
+.SRLStage {
+  background-color: rgba(0,0,0,0.96) !important;
+}
+.SRLThumbnails {
+  overflow-y: auto !important;
+  max-height: 200px !important;
+}
