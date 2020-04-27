@@ -4,10 +4,10 @@ import { Link } from "react-scroll"
 
 let Home = () => {
   let images = {
-    'Rólunk': require('../images/homepage/rolunk.jpg'),
-    'Termékek': require('../images/homepage/termekek.jpg'),
-    'Galéria': require('../images/homepage/galeria.jpg'),
-    'Kapcsolat': require('../images/homepage/kapcsolat.jpg')
+    'Rólunk': 'images/homepage/rolunk.jpg',
+    'Termékek': 'images/homepage/termekek.jpg',
+    'Galéria': 'images/homepage/galeria.jpg',
+    'Kapcsolat': 'images/homepage/kapcsolat.jpg'
   }
 
   return (
