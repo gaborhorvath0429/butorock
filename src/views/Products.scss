@@ -1,4 +1,5 @@
 .products {
+  background-image: url('/images/products/backgrounds/konyhabutorok.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -33,6 +34,7 @@
       padding: 1.95vw;
       cursor: pointer;
       transition: .5s;
+      color: white;
 
       img {
         width: 7.95vw;

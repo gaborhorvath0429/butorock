@@ -7,6 +7,8 @@ let Products = () => {
   const { setImages } = useContext(GalleryImages)
 
   let categories = [ // https://www.flaticon.com/free-icon/sofa_2789633?term=sofa&page=1&position=21
+    { text: 'Konyhabútorok', icon: 'images/products/icons/kitchen.png', images: importAll(require.context('../images/products/categories/konyhabutorok', true, /\.(png|jpe?g)$/)) },
+    { text: 'Tolóajtós szekrények', icon: 'images/products/icons/closet2.png', images: importAll(require.context('../images/products/categories/toloajtosszekrenyek', true, /\.(png|jpe?g)$/)) },
     { text: 'Asztalok és székek', icon: 'images/products/icons/desk.png', images: importAll(require.context('../images/products/categories/asztalok', true, /\.(png|jpe?g)$/)) },
     { text: 'Előszoba bútorok', icon: 'images/products/icons/cabinet.png', images: importAll(require.context('../images/products/categories/eloszobabutorok', true, /\.(png|jpe?g)$/)) },
     { text: 'Fabútorok', icon: 'images/products/icons/wood.png', images: importAll(require.context('../images/products/categories/fabutorok', true, /\.(png|jpe?g)$/)) },
@@ -19,15 +21,13 @@ let Products = () => {
     { text: 'Irodabútorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g)$/)) },
     { text: 'Kanapék', icon: 'images/products/icons/sofa2.png', images: importAll(require.context('../images/products/categories/kanapek', true, /\.(png|jpe?g)$/)) },
     { text: 'Kiegészítők', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Konyhabútorok', icon: 'images/products/icons/kitchen.png', images: importAll(require.context('../images/products/categories/konyhabutorok', true, /\.(png|jpe?g)$/)) },
     { text: 'Sarokgarnitúrák', icon: 'images/products/icons/couch.png', images: importAll(require.context('../images/products/categories/sarokgarniturak', true, /\.(png|jpe?g)$/)) },
     { text: 'Szekrénysorok', icon: 'images/products/icons/closet.png', images: importAll(require.context('../images/products/categories/szekrenysorok', true, /\.(png|jpe?g)$/)) },
     { text: 'Tálalószekrények', icon: 'images/products/icons/wardrobe.png', images: importAll(require.context('../images/products/categories/talaloszekrenyek', true, /\.(png|jpe?g)$/)) },
-    { text: 'Tolóajtós szekrények', icon: 'images/products/icons/closet2.png', images: importAll(require.context('../images/products/categories/toloajtosszekrenyek', true, /\.(png|jpe?g)$/)) },
   ]
 
   let toggleActive = () => {
-    document.getElementById("Termékek").style.backgroundImage = 'url(images/products/backgrounds/' + Math.floor(Math.random() * 3 + 1) + '.jpg)'
+    document.getElementById("Termékek").style.backgroundImage = 'url(/images/products/backgrounds/' + Math.floor(Math.random() * 3 + 1) + '.jpg)'
   }
 
   let onCategoryClick = (category) => {
