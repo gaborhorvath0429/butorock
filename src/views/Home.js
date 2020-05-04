@@ -14,7 +14,7 @@ let Home = () => {
     <div className="home" id="Home">
       <div className="nav">
         {Object.keys(images).map(key => (
-          <Link smooth={'easeInOutQuint'} duration={700} to={key} key={key}><div className="item" style={{backgroundImage: `url(${images[key]})`}}>{ key }</div></Link>
+          <Link smooth={'easeInOutQuint'} duration={700} to={key} offset={key === 'Termékek' ? -50 : 0} key={key}><div className="item" style={{backgroundImage: `url(${images[key]})`}}>{ key }</div></Link>
         ))}
       </div>
       <div className="overlay"></div>

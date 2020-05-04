@@ -7,27 +7,26 @@ let Products = () => {
   const { setImages } = useContext(GalleryImages)
 
   let categories = [ // https://www.flaticon.com/free-icon/sofa_2789633?term=sofa&page=1&position=21
-    { text: 'Konyhabútorok', icon: 'images/products/icons/kitchen.png', images: importAll(require.context('../images/products/categories/konyhabutorok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Tolóajtós szekrények', icon: 'images/products/icons/closet2.png', images: importAll(require.context('../images/products/categories/toloajtosszekrenyek', true, /\.(png|jpe?g)$/)) },
-    { text: 'Asztalok és székek', icon: 'images/products/icons/desk.png', images: importAll(require.context('../images/products/categories/asztalok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Előszoba bútorok', icon: 'images/products/icons/cabinet.png', images: importAll(require.context('../images/products/categories/eloszobabutorok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Fabútorok', icon: 'images/products/icons/wood.png', images: importAll(require.context('../images/products/categories/fabutorok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Fotelágyak', icon: 'images/products/icons/sofa.png', images: importAll(require.context('../images/products/categories/fotelagyak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Franciaágyak', icon: 'images/products/icons/bed.png', images: importAll(require.context('../images/products/categories/franciaagyak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Fürdőszoba', icon: 'images/products/icons/bathroom.png', images: importAll(require.context('../images/products/categories/furdoszobak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Ülőgarnitúrák', icon: 'images/products/icons/chair.png', images: importAll(require.context('../images/products/categories/ulogarniturak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Gyerekszoba bútorok', icon: 'images/products/icons/child.png', images: importAll(require.context('../images/products/categories/gyerekszobak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Heverők', icon: 'images/products/icons/single.png', images: importAll(require.context('../images/products/categories/heverok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Irodabútorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Kanapék', icon: 'images/products/icons/sofa2.png', images: importAll(require.context('../images/products/categories/kanapek', true, /\.(png|jpe?g)$/)) },
-    { text: 'Kiegészítők', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Sarokgarnitúrák', icon: 'images/products/icons/couch.png', images: importAll(require.context('../images/products/categories/sarokgarniturak', true, /\.(png|jpe?g)$/)) },
-    { text: 'Szekrénysorok', icon: 'images/products/icons/closet.png', images: importAll(require.context('../images/products/categories/szekrenysorok', true, /\.(png|jpe?g)$/)) },
-    { text: 'Tálalószekrények', icon: 'images/products/icons/wardrobe.png', images: importAll(require.context('../images/products/categories/talaloszekrenyek', true, /\.(png|jpe?g)$/)) },
+    { text: 'Konyhabútorok', name: 'konyhabutorok', icon: 'images/products/icons/kitchen.png', images: importAll(require.context('../images/products/categories/konyhabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Tolóajtós szekrények', name: 'toloajtosszekrenyek', icon: 'images/products/icons/closet2.png', images: importAll(require.context('../images/products/categories/toloajtosszekrenyek', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Asztalok és székek', name: 'asztalok', icon: 'images/products/icons/desk.png', images: importAll(require.context('../images/products/categories/asztalok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Előszoba bútorok', name: 'eloszobabutorok', icon: 'images/products/icons/cabinet.png', images: importAll(require.context('../images/products/categories/eloszobabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Fabútorok', name: 'fabutorok', icon: 'images/products/icons/wood.png', images: importAll(require.context('../images/products/categories/fabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Fotelágyak', name: 'fotelagyak', icon: 'images/products/icons/sofa.png', images: importAll(require.context('../images/products/categories/fotelagyak', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Franciaágyak', name: 'franciaagyak', icon: 'images/products/icons/bed.png', images: importAll(require.context('../images/products/categories/franciaagyak', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Fürdőszoba', name: 'furdoszobak', icon: 'images/products/icons/bathroom.png', images: importAll(require.context('../images/products/categories/furdoszobak', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Ülőgarnitúrák', name: 'ulogarniturak', icon: 'images/products/icons/chair.png', images: importAll(require.context('../images/products/categories/ulogarniturak', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Gyerekszoba bútorok', name: 'gyerekszobabutorok', icon: 'images/products/icons/child.png', images: importAll(require.context('../images/products/categories/gyerekszobak', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Heverők', name: 'heverok', icon: 'images/products/icons/single.png', images: importAll(require.context('../images/products/categories/heverok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Irodabútorok', name: 'irodabutorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Kanapék', name: 'kanapek', icon: 'images/products/icons/sofa2.png', images: importAll(require.context('../images/products/categories/kanapek', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Kiegészítők', name: 'kiegeszitok', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Szekrénysorok', name: 'szekrenysorok', icon: 'images/products/icons/closet.png', images: importAll(require.context('../images/products/categories/szekrenysorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Tálalószekrények', name: 'talaloszekrenyek', icon: 'images/products/icons/wardrobe.png', images: importAll(require.context('../images/products/categories/talaloszekrenyek', true, /\.(png|jpe?g|JPE?G)$/)) },
   ]
 
-  let toggleActive = () => {
-    document.getElementById("Termékek").style.backgroundImage = 'url(/images/products/backgrounds/' + Math.floor(Math.random() * 3 + 1) + '.jpg)'
+  let toggleActive = (category) => {
+    document.getElementById("Termékek").style.backgroundImage = 'url(/images/products/backgrounds/' + category.name + '.JPEG)'
   }
 
   let onCategoryClick = (category) => {
@@ -65,7 +64,7 @@ let Products = () => {
       <div className="categories" ref={categoriesRef}>
         {categories.map(category => (
           <Link key={category.text} className="link" smooth={'easeInOutQuint'} duration={700} to={'Galéria'}>
-            <div className="category" onMouseEnter={toggleActive} onClick={() => onCategoryClick(category)}>
+            <div className="category" onMouseEnter={() => toggleActive(category)} onClick={() => onCategoryClick(category)}>
               <img alt='' src={category.icon}/>
               <div className="title">{category.text}</div>
             </div>

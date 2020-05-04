@@ -36,7 +36,7 @@ export const GalleryImages = React.createContext()
 
 let App = () => {
   const [ lightboxOpen, toggleLightBox ] = useReducer(lightboxReducer, false)
-  const [ images, setImages ] = useReducer(imagesReducer, importAll(require.context('./images/products/categories/konyhabutorok', true, /\.(png|jpe?g)$/)).map(image => ({ src: image, width: 1, height: 1, caption: '' })))
+  const [ images, setImages ] = useReducer(imagesReducer, importAll(require.context('./images/products/categories/konyhabutorok', true, /\.(png|jpe?g|JPE?G)$/)).map(image => ({ src: image, width: 1, height: 1, caption: '' })))
 
   return (
     <LightboxOpen.Provider value={{ lightboxOpen, toggleLightBox }}>

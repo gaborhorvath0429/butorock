@@ -34,7 +34,7 @@ let ImageGallery = () => {
         ) : null}
       </ModalGateway>
       {showButton ? (
-        <Link className="backToCategories" spy={true} smooth={'easeInOutQuint'} duration={700} to={'Termékek'}>Vissza a kategóriákhoz</Link>
+        <Link className="backToCategories" spy={true} smooth={'easeInOutQuint'} offset={-50} duration={700} to={'Termékek'}>Vissza a kategóriákhoz</Link>
       ) : null}
     </div>
   )

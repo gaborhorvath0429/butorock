@@ -21,7 +21,7 @@ let Header = () => {
         <div className="links">
           <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Rólunk'}>Rólunk</Link>
           <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Galéria'}>Galéria</Link>
-          <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Termékek'}>Termékek</Link>
+          <Link className="link" smooth={'easeInOutQuint'} offset={-50} duration={700} to={'Termékek'}>Termékek</Link>
           <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Kapcsolat'}>Kapcsolat</Link>
         </div>
       </div>
