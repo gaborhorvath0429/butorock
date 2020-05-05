@@ -1,0 +1,16 @@
+.kapcsolat {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 20vw;
+
+  #iframe {
+    width: 50vw;
+    height: 60vh;
+    margin-right: 3rem;
+  }
+}

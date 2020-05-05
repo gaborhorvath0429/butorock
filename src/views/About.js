@@ -5,10 +5,10 @@ let About = () => {
   return (
     <div className="about" id="Rólunk">
       <div>
-        <h1>Ezúton is engedje meg, hogy bemutassuk cégünket!</h1>
-        <p>A Sütheő Család tulajdonába lévő vállalkozás, 1991 óta foglalkozik bútorok gyártásával. Az évek során történő folyamatos fejlesztések lehetővé teszik a vásárlóink egyedi igényeinek kielégítését. Kezdetben kárpitos bútorok gyártása volt a cég főprofilja, de a 90-es évek végén áthelyeződött a hangsúly a szekrénysorok, konyhabútorok gyártására. Az évek múlásával profilunk lett a tolóajtós szekrények, irodabútorok, üzletberendezések gyártása.</p>
-
-        <p>A termékpaletta folyamatos frissítése lehetővé teszi, hogy mindig naprakészek legyünk az Ön ötleteinek kivitelezéséhez. A helyszíni felmérést térítésmentesen vállaljuk!</p>
+        <p>Cégünk fő erőssége egyedi és széria bútorok gyártása az ügyfeleink elképzelései szerint.</p>
+        <p>Széleskörű portfóliónk kiterjed az egyedi kárpitos bútortól az egyedi asztalos bútorokig.</p>
+        <p>A több évtizedes szakmai tudás birtokában, a korszerű gépparknak és a folyamatos innovatív technológiák elsajátításának köszönhetően törekszünk arra, hogy idő- és értékálló termékeket készítsünk vásárlóink számára.</p>
+        <p>A kiemelkedő szakmai tudással rendelkező csapatnak, valamint a folyamatos törekvés a vásárlói igények maximális kielégítésére a garancia az Ön számára, hogy együtt készítsük el álmai bútorát!</p>
       </div>
     </div>
   )
