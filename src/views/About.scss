@@ -9,10 +9,22 @@
   padding: 0 20vw;
   font-weight: 600;
 
-  h1 {
-    margin-bottom: 50px;
-  }
   p {
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .about {
+    padding-top: 80px;
+    margin-top: 80px;
+    display: block;
+    height: auto;
+    font-size: 1rem;
+
+    p {
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
   }
 }

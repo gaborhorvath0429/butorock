@@ -20,13 +20,19 @@ let Products = () => {
     { text: 'Heverők', name: 'heverok', icon: 'images/products/icons/single.png', images: importAll(require.context('../images/products/categories/heverok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Irodabútorok', name: 'irodabutorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Kanapék', name: 'kanapek', icon: 'images/products/icons/sofa2.png', images: importAll(require.context('../images/products/categories/kanapek', true, /\.(png|jpe?g|JPE?G)$/)) },
-    { text: 'Kiegészítők', name: 'kiegeszitok', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Szekrénysorok', name: 'szekrenysorok', icon: 'images/products/icons/closet.png', images: importAll(require.context('../images/products/categories/szekrenysorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Kiegészítők', name: 'kiegeszitok', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Tálalószekrények', name: 'talaloszekrenyek', icon: 'images/products/icons/wardrobe.png', images: importAll(require.context('../images/products/categories/talaloszekrenyek', true, /\.(png|jpe?g|JPE?G)$/)) },
   ]
 
+  categories.forEach(category => {
+    let image = new Image()
+    image.src = '/images/products/backgrounds/' + category.name + '.JPEG'
+    category.backgorund = image
+  })
+
   let toggleActive = (category) => {
-    document.getElementById("Termékek").style.backgroundImage = 'url(/images/products/backgrounds/' + category.name + '.JPEG)'
+    document.getElementById("Termékek").style.backgroundImage = 'url(' + category.backgorund.src + ')'
   }
 
   let onCategoryClick = (category) => {
@@ -63,7 +69,7 @@ let Products = () => {
     <div className="products" id="Termékek">
       <div className="categories" ref={categoriesRef}>
         {categories.map(category => (
-          <Link key={category.text} className="link" smooth={'easeInOutQuint'} duration={700} to={'Galéria'}>
+          <Link key={category.text} className="link" smooth={'easeInOutQuint'} offset={window.matchMedia("(max-width: 768px)").matches ? -50 : 0} duration={700} to={'Galéria'}>
             <div className="category" onMouseEnter={() => toggleActive(category)} onClick={() => onCategoryClick(category)}>
               <img alt='' src={category.icon}/>
               <div className="title">{category.text}</div>
@@ -76,6 +82,9 @@ let Products = () => {
       </div>
       <div className="arrow-right" onClick={() => sideScroll(categoriesRef.current,'right',5,vw(30),5)}>
         <img alt='' src={'images/products/icons/right.png'}/>
+      </div>
+      <div className="right-arrow">
+        <img alt='' width="70" src={'images/products/icons/right-arrow.gif'}/>
       </div>
     </div>
   )

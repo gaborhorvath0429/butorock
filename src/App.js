@@ -38,8 +38,21 @@ export const GalleryImages = React.createContext()
 let App = () => {
   const [ lightboxOpen, toggleLightBox ] = useReducer(lightboxReducer, false)
   const [ images, setImages ] = useReducer(imagesReducer, importAll(require.context('./images/products/categories/konyhabutorok', true, /\.(png|jpe?g|JPE?G)$/)).map(image => ({ src: image, width: 1, height: 1, caption: '' })))
-
-  return (
+  return window.matchMedia("(max-width: 768px)").matches ?
+  (
+    <LightboxOpen.Provider value={{ lightboxOpen, toggleLightBox }}>
+    <GalleryImages.Provider value={{ images, setImages }}>
+      <Router>
+        <Header/>
+        <Products/>
+        <ImageGallery/>
+        <About/>
+        <Contact/>
+      </Router>
+    </GalleryImages.Provider>
+    </LightboxOpen.Provider>
+  ) :
+  (
     <LightboxOpen.Provider value={{ lightboxOpen, toggleLightBox }}>
       <GalleryImages.Provider value={{ images, setImages }}>
         <Router>
@@ -52,7 +65,7 @@ let App = () => {
         </Router>
       </GalleryImages.Provider>
     </LightboxOpen.Provider>
-  );
+  )
 }
 
 export default App

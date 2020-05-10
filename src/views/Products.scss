@@ -1,4 +1,5 @@
 .products {
+  position: relative;
   background-image: url('/images/products/backgrounds/konyhabutorok.JPEG');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -86,6 +87,48 @@
     img {
       width: 100%;
       margin-top: 10vh;
+    }
+  }
+
+  .right-arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .products {
+    margin-top: 50px;
+    background-attachment: inherit;
+
+    .categories {
+      height: 200px;
+      .link {
+        width: 32vw;
+      }
+      
+      .category {
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+        width: 28vw;
+        img {
+          width: 28vw;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .arrow-left, .arrow-right {
+      display: none;
+    }
+
+    .right-arrow {
+      display: block;
+      position: absolute;
+      bottom: 190px;
+      right: 0;
     }
   }
 }

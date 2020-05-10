@@ -22,7 +22,7 @@ let ImageGallery = () => {
 
   return (
     <div className="gallery" id="Galéria">
-      {images.length ? (<Gallery photos={images} onClick={openLightbox} />) : null}
+      {images.length && showButton ? (<Gallery photos={images} onClick={openLightbox} />) : null}
       <ModalGateway>
         {lightboxOpen ? (
           <Modal onClose={() => toggleLightBox({ type: 'close' })}>

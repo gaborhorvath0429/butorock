@@ -15,3 +15,9 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (max-device-width: 768px) {
+  .gallery {
+    margin-top: 80px;
+  }
+}

@@ -9,18 +9,31 @@ let Header = () => {
   let logo = (
     <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Home'}>
       <div className="logo"><img width="40px" alt="" src="images/logo.png"/>
-        Sütheő Bútor Kft.
+        <span className="title">Sütheő Bútor Kft.</span>
       </div>
     </Link>
   )
-
-  return (
+  return window.matchMedia("(max-width: 768px)").matches ?
+  (
+    <div>
+      <div className={"header"}>
+        {logo}
+        <div className="links">
+          <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Rólunk'}>Rólunk</Link>
+          <Link className="link" smooth={'easeInOutQuint'} offset={window.matchMedia("(max-width: 768px)").matches ? -50 : 0} duration={700} to={'Galéria'}>Galéria</Link>
+          <Link className="link" smooth={'easeInOutQuint'} offset={-50} duration={700} to={'Termékek'}>Termékek</Link>
+          <Link className="link" smooth={'easeInOutQuint'} offset={window.matchMedia("(max-width: 768px)").matches ? -50 : 0} duration={700} to={'Kapcsolat'}>Kapcsolat</Link>
+        </div>
+      </div>
+    </div>
+  ) :
+  (
     <div>
       <div className={"header" + (hidden || window.scrollY === 0 ? ' hidden' : '')}>
         {logo}
         <div className="links">
           <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Rólunk'}>Rólunk</Link>
-          <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Galéria'}>Galéria</Link>
+          <Link className="link" smooth={'easeInOutQuint'} offset={window.matchMedia("(max-width: 768px)").matches ? -50 : 0} duration={700} to={'Galéria'}>Galéria</Link>
           <Link className="link" smooth={'easeInOutQuint'} offset={-50} duration={700} to={'Termékek'}>Termékek</Link>
           <Link className="link" smooth={'easeInOutQuint'} duration={700} to={'Kapcsolat'}>Kapcsolat</Link>
         </div>

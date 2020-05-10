@@ -13,4 +13,29 @@
     height: 60vh;
     margin-right: 3rem;
   }
+
+  .media {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    img {
+      width: 2.15rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .kapcsolat {
+    flex-direction: column;
+    padding-top: 80px;
+
+    #iframe {
+      width: 80vw;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
 }
