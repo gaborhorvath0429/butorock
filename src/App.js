@@ -12,6 +12,7 @@ import About from './views/About'
 import Products from './views/Products'
 import ImageGallery from './views/Gallery'
 import Contact from './views/Contact'
+import Szechenyi from './views/Szechenyi'
 
 function importAll(r) {
   return r.keys().map(r)
@@ -60,6 +61,7 @@ let App = () => {
           <Home/>
           <About/>
           <Contact/>
+          <Szechenyi/>
           <Products/>
           <ImageGallery/>
         </Router>

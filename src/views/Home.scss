@@ -1,5 +1,13 @@
 .home {
   width: 100vw;
+
+  .infoblokk {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+
   .overlay {
     position: absolute;
     width: 0;

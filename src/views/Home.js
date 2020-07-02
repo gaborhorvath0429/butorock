@@ -17,6 +17,7 @@ let Home = () => {
           <Link smooth={'easeInOutQuint'} duration={700} to={key} offset={key === 'Termékek' ? -50 : 0} key={key}><div className="item" style={{backgroundImage: `url(${images[key]})`}}>{ key }</div></Link>
         ))}
       </div>
+      <Link smooth={'easeInOutQuint'} duration={700} to="szechenyi"><img className="infoblokk" src="images/infoblokk.png"/></Link>
       <div className="overlay"></div>
     </div>
   )
