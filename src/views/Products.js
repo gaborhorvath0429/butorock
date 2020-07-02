@@ -18,7 +18,7 @@ let Products = () => {
     { text: 'Ülőgarnitúrák', name: 'ulogarniturak', icon: 'images/products/icons/chair.png', images: importAll(require.context('../images/products/categories/ulogarniturak', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Gyerekszoba bútorok', name: 'gyerekszobabutorok', icon: 'images/products/icons/child.png', images: importAll(require.context('../images/products/categories/gyerekszobak', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Heverők', name: 'heverok', icon: 'images/products/icons/single.png', images: importAll(require.context('../images/products/categories/heverok', true, /\.(png|jpe?g|JPE?G)$/)) },
-    { text: 'Irodabútorok', name: 'irodabutorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
+    { text: 'Irodabútorok és üzletberendezések', name: 'irodabutorok', icon: 'images/products/icons/workplace.png', images: importAll(require.context('../images/products/categories/irodabutorok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Kanapék', name: 'kanapek', icon: 'images/products/icons/sofa2.png', images: importAll(require.context('../images/products/categories/kanapek', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Szekrénysorok', name: 'szekrenysorok', icon: 'images/products/icons/closet.png', images: importAll(require.context('../images/products/categories/szekrenysorok', true, /\.(png|jpe?g|JPE?G)$/)) },
     { text: 'Kiegészítők', name: 'kiegeszitok', icon: 'images/products/icons/home.png', images: importAll(require.context('../images/products/categories/kiegeszitok', true, /\.(png|jpe?g|JPE?G)$/)) },

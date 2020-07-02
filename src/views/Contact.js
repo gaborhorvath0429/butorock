@@ -9,7 +9,7 @@ let Contact = () => {
       (<div className="media">
         <a href="https://www.facebook.com/sutheobutor" rel="noopener noreferrer" target="_blank"><img alt="" width="40px" src="images/facebook.png"/></a>
         <a href="https://www.instagram.com/butorock.hu" rel="noopener noreferrer" target="_blank"><img alt="" width="40px" src="images/instagram.png"/></a>
-        <a href="mailto:info@butorock.hu" rel="noopener noreferrer" target="_blank"><img alt="" width="40px" src="images/email.png"/></a>
+        <a href="mailto:info@butorock.hu" rel="noopener noreferrer" target="_blank"><img id="email" alt="" width="40px" src="images/email.png"/></a>
       </div>) : ''}
       <iframe title="térkép" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.868284160036!2d16.58002360391065!3d46.84628277313105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xef7b2701f6651ec3!2zU8O8dGhlxZEgQsO6dG9yIEtmdC4!5e0!3m2!1shu!2shu!4v1425893400262" id="iframe" frameBorder="0" style={{border: 0}}></iframe>
       <div className="contacts">
