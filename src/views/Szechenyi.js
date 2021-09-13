@@ -26,6 +26,25 @@ let Szechenyi = () => {
             <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
             <li>projekt azonosító száma: GINOP-4.1.3-19-2019-00811</li>
         </ul>
+        <br></br><h1>Eszközbeszerzés a Sütheő Bútor Kftnél</h1><br></br>
+
+        Projekt adatai:<br/><br/>
+        <ul>
+
+        <li>kedvezményezett neve: Sütheő Bútor Kereskedelmi és Szolgáltató Korlátolt Felelősségű Társaság</li>
+        <li>projekt címe: Eszközbeszerzés a Sütheő Bútor Kft.-nél</li>
+        <li>szerződött támogatás összege: 9 830 240 Ft.</li>
+        <li>támogatás mértéke: 70%</li>
+        <li>projekt tartalmának bemutatása:</li><br></br>
+
+        <p>A támogatás tárgya az „Eszközbeszerzés a Sütheő Bútor Kft-nél” című, a támogatási kérelemben és annak mellékleteiben
+        rögzített Projekt elszámolható költségeinek az Európai Regionális Fejlesztési Alapból és hazai központi költségvetési
+        előirányzatból vissza nem térítendő támogatás formájában történő finanszírozása.</p><br></br>
+
+        <li>projekt tényleges befejezése: 2021 11 30.</li>
+        <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
+        <li>projekt azonosító száma: GINOP-1.2.9-20-2021-01980</li>
+        </ul>
       </div>
     </div>
   )
