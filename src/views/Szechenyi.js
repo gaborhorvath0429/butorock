@@ -26,7 +26,7 @@ let Szechenyi = () => {
             <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
             <li>projekt azonosító száma: GINOP-4.1.3-19-2019-00811</li>
         </ul>
-        <br></br><h1>Eszközbeszerzés a Sütheő Bútor Kftnél</h1><br></br>
+        <br></br><h1>Eszközbeszerzés a Sütheő Bútor Kft.-nél</h1><br></br>
 
         Projekt adatai:<br/><br/>
         <ul>
