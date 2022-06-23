@@ -39,9 +39,10 @@ let Szechenyi = () => {
 
         <p>A támogatás tárgya az „Eszközbeszerzés a Sütheő Bútor Kft-nél” című, a támogatási kérelemben és annak mellékleteiben
         rögzített Projekt elszámolható költségeinek az Európai Regionális Fejlesztési Alapból és hazai központi költségvetési
-        előirányzatból vissza nem térítendő támogatás formájában történő finanszírozása.</p><br></br>
+        előirányzatból vissza nem térítendő támogatás formájában történő finanszírozása. 
+        A pályázat keretében 1 fő munkatársunk részt vett egy 30 órás digitális kompetencia fejleszetésen.</p><br></br>
 
-        <li>projekt tényleges befejezése: 2021 11 30.</li>
+        <li>projekt tényleges befejezése: 2022.05.24.</li>
         <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
         <li>projekt azonosító száma: GINOP-1.2.9-20-2021-01980</li>
         </ul>
