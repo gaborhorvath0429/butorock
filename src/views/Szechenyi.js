@@ -12,7 +12,7 @@ let Szechenyi = () => {
             <li>kedvezményezett neve: Sütheő Bútor Kereskedelmi és Szolgáltató Korlátolt Felelősségű Társaság</li>
             
             <li>projekt címe: A Sütheő Bútor Kft napelemes fejlesztése</li>
-            <li>szerződött támogatás összege: 3 000 000 Ft.</li>
+            <li>szerződött támogatás összege: 3 000 000 Ft.</li>
             <li>támogatás mértéke: 100 %</li>
             <li>projekt tartalmának bemutatása:</li><br></br>
             <p>A projekt keretében a Sütheő Bútor Kft. 8999 Zalalövő, Petőfi Sándor utca 31. helyszínén
@@ -30,21 +30,29 @@ let Szechenyi = () => {
 
         Projekt adatai:<br/><br/>
         <ul>
+          <li>kedvezményezett neve: Sütheő Bútor Kereskedelmi és Szolgáltató Korlátolt Felelősségű Társaság</li>
+          <li>projekt címe: Eszközbeszerzés a Sütheő Bútor Kft.-nél</li>
+          <li>szerződött támogatás összege: 9 830 240 Ft.</li>
+          <li>támogatás mértéke: 70%</li>
+          <li>projekt tartalmának bemutatása:</li><br></br>
 
-        <li>kedvezményezett neve: Sütheő Bútor Kereskedelmi és Szolgáltató Korlátolt Felelősségű Társaság</li>
-        <li>projekt címe: Eszközbeszerzés a Sütheő Bútor Kft.-nél</li>
-        <li>szerződött támogatás összege: 9 830 240 Ft.</li>
-        <li>támogatás mértéke: 70%</li>
-        <li>projekt tartalmának bemutatása:</li><br></br>
+          <p>A támogatás tárgya az „Eszközbeszerzés a Sütheő Bútor Kft-nél” című, a támogatási kérelemben és annak mellékleteiben
+          rögzített Projekt elszámolható költségeinek az Európai Regionális Fejlesztési Alapból és hazai központi költségvetési
+          előirányzatból vissza nem térítendő támogatás formájában történő finanszírozása. 
+          A pályázat keretében 1 fő munkatársunk részt vett egy 30 órás digitális kompetencia fejleszetésen.</p><br></br>
 
-        <p>A támogatás tárgya az „Eszközbeszerzés a Sütheő Bútor Kft-nél” című, a támogatási kérelemben és annak mellékleteiben
-        rögzített Projekt elszámolható költségeinek az Európai Regionális Fejlesztési Alapból és hazai központi költségvetési
-        előirányzatból vissza nem térítendő támogatás formájában történő finanszírozása. 
-        A pályázat keretében 1 fő munkatársunk részt vett egy 30 órás digitális kompetencia fejleszetésen.</p><br></br>
+          <li>projekt tényleges befejezése: 2022.05.24.</li>
+          <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
+          <li>projekt azonosító száma: GINOP-1.2.9-20-2021-01980</li>
+        </ul>
+        <br></br><h1>Kölcsönszerződés a GINOP-8.3.5-18/B azonosító jelű Mikro-, kis- és középvállalkozások technológiai korszerűsítése célú Hitelprogram keretében</h1><br></br>
 
-        <li>projekt tényleges befejezése: 2022.05.24.</li>
-        <li>projekt megvalósulási helyszíne: 8999 Zalalövő, Petőfi Sándor u. 31., hrsz: 314</li>
-        <li>projekt azonosító száma: GINOP-1.2.9-20-2021-01980</li>
+        Projekt adatai:<br/><br/>
+        <ul>
+          <li>az Adós neve:  Sütheő Bútor Kft.</li>
+          <li>a Forgóeszköz finanszírozás tartalmának rövid bemutatása: Készlet beszerzés és működési költségek finanszírozása</li>
+          <li>a Hitelprogram azonosító jele. GINOP 8.3.5-18/B</li>
+          <li>visszatérítendő hitel összege: 24,9 M Ft</li>
         </ul>
       </div>
     </div>
